@@ -21,13 +21,13 @@ namespace Series
                         InserirSerie();
                         break;
                     case "3":
-                        // AtualizarSerie();
+                        AtualizarSerie();
                         break;
                     case "4":
-                        //  ExcluirSerie();
+                        ExcluirSerie();
                         break;
                     case "5":
-                        //  VisualizarSerie():
+                        VisualizarSerie():
                         break;
                     case "9":
                         Console.Clear();
@@ -122,10 +122,10 @@ namespace Series
             Console.WriteLine("Inserir nova série");
             Console.WriteLine();
 
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getvalues?view=netcore-3.1
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view=netcore-3.1
+            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getvalues?view=netcore-3.1            
             foreach (int i in Enum.GetValues(typeof(Genero)))
             {
+                // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view=netcore-3.1
                 Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
             }
             Console.Write("Digite o gênero entre as opções acima: ");
